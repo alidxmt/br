@@ -72,9 +72,9 @@ d3.select(this).selectAll("rect").style("stroke", "yellow").style("stroke-width"
 
 // Attach the click event listener to the circle
 
-function colorrectchange(x) {var els = document.querySelectorAll(".kureh");
+function colorrectchange(z) {var els = document.querySelectorAll(".kureh");
 for (var i = 0; i < els.length; i++) 
-    els[i].style.fill = "rgb(x)"}
+    els[i].style.fill = "rgb("+z+")"}
 
 function hame(x) {
     console.log('I am clickings! --hame');
