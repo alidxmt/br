@@ -71,20 +71,22 @@ d3.select(this).selectAll("rect").style("stroke", "yellow").style("stroke-width"
  
 
 // Attach the click event listener to the circle
-        
+
+function colorrectchange(x) {var els = document.querySelectorAll(".kureh");
+for (var i = 0; i < els.length; i++) 
+    els[i].style.fill = "rgb(x)"}
+
 function hame(x) {
     console.log('I am clickings! --hame');
    
     }
 
-function goneh(x) {console.log('I am clickings! --goneh'); var els = document.querySelectorAll(".kureh");
-for (var i = 0; i < els.length; i++) 
-    els[i].style.fill = data[i][3]<300 ? ("rgb("+Math.round(255-(data[i][3] / 1000)*160)+","+Math.round((data[i][3] / 1000)*0)+","+0+")") : "rgb(200,200,200)"}
-function dama(x) {console.log('I am clickings!--dama')}
-function feshar(x) {console.log('I am clickings! --feshar')}
-function madeh(x) {console.log('I am clickings! --madeh')}
-function gaz(x) {console.log('I am clickings! --gaz')}
-function zaman(x) {console.log('I am clickings! --zaman')}
+function goneh(x) {colorrectchange('100,100,100')}
+function dama(x) {colorrectchange('150,200,10');console.log('I am clickings!--dama')}
+function feshar(x) {colorrectchange('10,200,100');console.log('I am clickings! --feshar')}
+function madeh(x) {colorrectchange('100,100,230');console.log('I am clickings! --madeh')}
+function gaz(x) {colorrectchange('120,100,200');console.log('I am clickings! --gaz')}
+function zaman(x) {colorrectchange('100,200,200');console.log('I am clickings! --zaman')}
 
 
 
