@@ -77,7 +77,8 @@ for (var i = 0; i < els.length; i++)
     els[i].style.fill = "rgb("+z+")"}
 
 function hame(x) {
-    console.log('I am clickings! --hame');
+    colorrectchange('60,80,40');
+  console.log('I am clickings! --hame');
    
     }
 
